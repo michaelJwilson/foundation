@@ -1,0 +1,11 @@
+[package]
+name = "foundation"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "foundation"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+pyo3 = { version = "0.20.2", features = ["extension-module"] }

@@ -1,5 +1,12 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
+#
+# TODO
+#
+# - pre-commit-rust: fmt, clippy
+#
+#
+#
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: "v3.2.0"
@@ -16,3 +23,7 @@ repos:
         args: ["--pytest-test-first"]
       - id: requirements-txt-fixer
       - id: trailing-whitespace
+  - repo: https://github.com/doublify/pre-commit-rust
+    rev: "v1.0"
+    hooks:
+      - id: cargo-check

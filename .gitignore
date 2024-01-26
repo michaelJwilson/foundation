@@ -1,0 +1,5 @@
+*~
+debug/
+target/
+python/foundation/_*
+python/foundation/*.so
