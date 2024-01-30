@@ -1,4 +1,5 @@
 import pytest
 
-def first_test():
-    return None
+
+def test_example():
+    assert (1+1) == 2
