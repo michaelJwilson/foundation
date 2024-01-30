@@ -1,14 +1,30 @@
-[tool.maturin]
-python-source = "python"
-module-name = "foundation.core"
-
 [build-system]
 requires = ["maturin>=1.0,<2.0"]
 build-backend = "maturin"
 
+[project]
+name = "foundation"
+version = "0.0.1"
+description = "Foundation directory with basic setup"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {file = "LICENSE"}
+requires-python = ">=3.11.3"
+dependencies = [
+    "numpy",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.maturin]
+python-source = "python"
+module-name = "foundation.core"
+
 [tool.pytest.ini_options]
 minversion = "6.0"
-addopts = "-ra -q"
+addopts = ["-ra -q", "--showlocals", "--strict-markers", "--strict-config"]
+xfail_strict = true
+filterwarnings = ["error"]
 testpaths = [
     "tests",
     "integration",
