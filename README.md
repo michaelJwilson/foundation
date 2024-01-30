@@ -1,4 +1,5 @@
 # foundation
+[![Documentation Status](https://readthedocs.org/projects/foundationmjw/badge/?version=latest)](https://foundationmjw.readthedocs.io/en/latest/?badge=latest)
 
 
 ## ci & cd
