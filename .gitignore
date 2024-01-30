@@ -4,3 +4,6 @@ target/
 python/foundation/_*
 python/foundation/*.so
 tests/__pycache__/
+docs/build
+docs/_static
+docs/_templates
