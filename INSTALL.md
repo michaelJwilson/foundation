@@ -31,14 +31,13 @@ pip install polars
 > https://github.com/rust-lang/rust-clippy
 
 > apptainer / singularity
-> https://apptainer.org/docs/user/main/quick_start.html#downloading-images
+https://apptainer.org/docs/user/latest/quick_start.html
 
 > pytest
 > https://docs.pytest.org/en/7.4.x/how-to/fixtures.html
 pip install pytest
 
-> pytest-cov
+> pytest-cov, sphinx, line_profiler
 pip install pytest-cov
-
-> sphinx
 pip install sphinx
+pip install line_profiler

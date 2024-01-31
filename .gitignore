@@ -1,4 +1,5 @@
 *~
+*.sif
 debug/
 target/
 python/foundation/_*
