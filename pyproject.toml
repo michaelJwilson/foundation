@@ -13,6 +13,7 @@ authors = ["Michael J. Wilson"]
 readme = {file = "README.md", content-type = "text/markdown"}
 license = {file = "LICENSE"}
 requires-python = ">=3.9.18"
+repository = "https://github.com/michaelJwilson/foundation"
 dependencies = [
     "numpy",
     "furo"="^2024.1.29",
