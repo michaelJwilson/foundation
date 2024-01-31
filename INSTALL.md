@@ -42,6 +42,7 @@ pip install pytest-cov
 pip install sphinx
 pip install line_profiler
 pip install pipx
+pip install furo
 
 >
 pipx install poetry
