@@ -1,3 +1,6 @@
+> cache login credentials for longer
+git config --global credential.helper "cache --timeout 7200"
+
 > create a python virtual environment
 mkdir pudev
 
