@@ -1,12 +1,15 @@
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
 
 [project]
 name = "foundation"
 version = "0.0.1"
 description = "Foundation directory with basic setup"
-authors = ["Michael J. Wilson"]
+authors = [
+  {email = "michaeljwilson@princeton.edu"},
+  {name = "Michael J. Wilson"}
+]
 readme = {file = "README.md", content-type = "text/markdown"}
 license = {file = "LICENSE"}
 requires-python = ">=3.9.18"
