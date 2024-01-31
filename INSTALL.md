@@ -1,6 +1,9 @@
 > cache login credentials for longer
 git config --global credential.helper "cache --timeout 7200"
 
+> set mamba as the conda solver?
+conda config --set solver libmamba
+
 > create a python virtual environment
 mkdir pudev
 
@@ -8,24 +11,27 @@ virtualenv pudev
 
 source ~/software/pudev/bin/activate
 
-> set mamba as the conda solver?
-conda config --set solver libmamba
-
-> install poetry
+> pip install poetry, pre-commit, etc.
 pip install poetry
-
-> install pre-commit
 pip install pre-commit
+pip install polars
+pip install pytest-cov
+pip install sphinx
+pip install line_profiler
+pip install pipx
+pip install furo
+
+> pipx installs
+pipx install poetry
 
 > install maturin
 > https://github.com/PyO3/maturin
 > https://github.com/PyO3/pyo3
 pipx install maturin
 
-> install ruff + polars
+> install ruff
 > see https://github.com/astral-sh/ruff
 pip install ruff
-pip install polars
 
 > rust-clippy
 > https://github.com/rust-lang/rust-clippy
@@ -36,13 +42,3 @@ https://apptainer.org/docs/user/latest/quick_start.html
 > pytest
 > https://docs.pytest.org/en/7.4.x/how-to/fixtures.html
 pip install pytest
-
-> pytest-cov, sphinx, line_profiler, etc.
-pip install pytest-cov
-pip install sphinx
-pip install line_profiler
-pip install pipx
-pip install furo
-
->
-pipx install poetry
