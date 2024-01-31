@@ -37,7 +37,11 @@ https://apptainer.org/docs/user/latest/quick_start.html
 > https://docs.pytest.org/en/7.4.x/how-to/fixtures.html
 pip install pytest
 
-> pytest-cov, sphinx, line_profiler
+> pytest-cov, sphinx, line_profiler, etc.
 pip install pytest-cov
 pip install sphinx
 pip install line_profiler
+pip install pipx
+
+>
+pipx install poetry
