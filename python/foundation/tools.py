@@ -1,3 +1,6 @@
+from pysam import VariantFile
+
+
 def calculate_pi(n: int) -> float:
     result = 0.0
 
@@ -16,5 +19,18 @@ def calculate_pi(n: int) -> float:
     return round(result, n)
 
 
+def load_vcf(fpath: str) -> VariantFile:
+    # NB auto-detect input format
+    vcf = VariantFile(fpath)
+
+    for rec in vcf.fetch("chr1", 1_000_000, 1_200_000):
+        print(rec)
+        break
+
+    return vcf
+
+
 if __name__ == "__main__":
-    calculate_pi(3)
+    # calculate_pi(3)
+
+    result = load_vcf("/home/mw9568/data/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz")
