@@ -1,25 +1,24 @@
 > cache login credentials for longer
 git config --global credential.helper "cache --timeout 7200"
 
+> load python modules on princeton clusters
+module load anaconda3/2023.9
+
 > set mamba as the conda solver?
 conda config --set solver libmamba
 
 > create a python virtual environment
 mkdir ~/software/pudev
 
-virtualenv ~/software/pudev
+python3 -m venv "/home/mw9568/software/pudev"
 
-source ~/software/pudev/bin/activate
+source /home/mw9568/software/pudev/bin/activate
 
 > pip install maturin
 pip install -U pip maturin
 
 > pip install poetry, pre-commit, etc.
-pip install pre-commit
-pip install sphinx
-pip install line_profiler
-pip install pipx
-pip install furo
+pip install pre-commit sphinx pipx furo
 
 > install ruff
 > see https://github.com/astral-sh/ruff
@@ -30,6 +29,7 @@ pip install ruff
 pip install pytest
 
 > optional
+pip install line_profiler
 pip install polars
 pip install pytest-cov
 

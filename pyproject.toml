@@ -1,8 +1,5 @@
-# See:
-#   https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
-#   https://www.maturin.rs/tutorial
 [build-system]
-requires = ["maturin>=1.0,<2.0"]
+requires = ["setuptools ~= 58.0", "cython ~= 0.29.0"]
 build-backend = "maturin"
 
 [project]

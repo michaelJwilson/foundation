@@ -9,3 +9,7 @@ https://github.com/henryiii/sqat-example
 ## ci & cd
 With thanks to Andres Rios Tascon, see:
 https://github.com/ariostas/wintersession2024-cicd/tree/main
+
+## resources:
+https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+https://www.maturin.rs/tutorial
