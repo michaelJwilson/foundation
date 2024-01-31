@@ -7,3 +7,4 @@ python/foundation/*.so
 tests/__pycache__/
 docs/_static
 docs/_templates
+docs/build/latex/
