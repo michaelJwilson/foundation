@@ -2,6 +2,9 @@ from pysam import VariantFile
 
 
 def calculate_pi(n: int) -> float:
+    """
+    Basic calculation of pi
+    """
     result = 0.0
 
     # Initialize denominator
@@ -20,7 +23,9 @@ def calculate_pi(n: int) -> float:
 
 
 def load_vcf(fpath: str) -> VariantFile:
-    # NB auto-detect input format
+    """
+    Load and print a VCF file
+    """
     vcf = VariantFile(fpath)
 
     for rec in vcf.fetch("chr1", 1_000_000, 1_200_000):
