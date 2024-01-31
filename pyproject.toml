@@ -1,4 +1,6 @@
-# https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+# See:
+#   https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+#   https://www.maturin.rs/tutorial
 [build-system]
 requires = ["maturin>=1.0,<2.0"]
 build-backend = "maturin"
@@ -24,6 +26,7 @@ test = ["pytest"]
 [tool.maturin]
 python-source = "python"
 module-name = "foundation.core"
+features = ["pyo3/extension-module"]
 
 [tool.pytest.ini_options]
 minversion = "6.0"
