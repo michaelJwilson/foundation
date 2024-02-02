@@ -61,6 +61,7 @@ dependencies = [
   "urllib3==2.2.0",
   "userpath==1.9.1",
   "virtualenv==20.25.0",
+  "pysam==0.22.0",
 ]
 
 [project.optional-dependencies]
