@@ -10,9 +10,9 @@ conda config --set solver libmamba
 > create a python virtual environment
 mkdir ~/software/pudev
 
-python3 -m venv "/home/mw9568/software/pudev"
+python3 -m venv ~/software/pudev
 
-source /home/mw9568/software/pudev/bin/activate
+source ~/software/pudev/bin/activate
 
 > pip install maturin
 pip install -U pip maturin
