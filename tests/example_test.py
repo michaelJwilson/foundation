@@ -1,5 +1,7 @@
-import pytest
+from __future__ import annotations
 
 
 def test_example():
-    assert (1+1) == 2
+    expectation = 2
+
+    assert expectation == (1 + 1)

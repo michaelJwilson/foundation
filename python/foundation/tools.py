@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from pysam import VariantFile
 
 
@@ -29,7 +31,8 @@ def load_vcf(fpath: str) -> VariantFile:
     vcf = VariantFile(fpath)
 
     for rec in vcf.fetch("chr1", 1_000_000, 1_200_000):
-        print(rec)
+        assert rec
+
         break
 
     return vcf
