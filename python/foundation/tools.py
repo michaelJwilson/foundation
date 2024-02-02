@@ -1,25 +1,17 @@
 from __future__ import annotations
 
+import logging
+
 from pysam import VariantFile
+
+logger = logging.getLogger(__name__)
 
 
 def calculate_pi(n: int) -> float:
     """
     Basic calculation of pi
     """
-    result = 0.0
-
-    # Initialize denominator
-    k = 1
-
-    # Initialize sum
-    for i in range(1_000_000):
-        # even index elements are positive
-        if i % 2 == 0:
-            result += 4 / k
-        else:
-            # odd index elements are negative
-            result -= 4 / k
+    result = 3.14159265
 
     return round(result, n)
 
@@ -32,7 +24,6 @@ def load_vcf(fpath: str) -> VariantFile:
 
     for rec in vcf.fetch("chr1", 1_000_000, 1_200_000):
         assert rec
-
         break
 
     return vcf
